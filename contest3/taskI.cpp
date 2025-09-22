@@ -7,7 +7,7 @@
 
 int main() {
     int n, temp, s = 0;
-    unsigned long long res = 0;
+    unsigned res = 0;
     std::string temp_bin = "";
     std::cin >> n;
     for (int i = 0; i < n; ++i) {
@@ -39,8 +39,8 @@ int main() {
         res /= 2;
         cnt = 2;
     }
-    //std::cout << res << std::endl;
-    unsigned long long dec_res = 0, base = 1;
+    std::cout << res << std::endl;
+    int dec_res = 0, base = 1;
     while (res) {
         int last_dig = res % 10;
         res /= 10;
