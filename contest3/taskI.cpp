@@ -6,8 +6,8 @@
 #include <cmath>
 
 int main() {
-    int n, temp, s = 0;
-    unsigned res = 0;
+    int n, temp;
+    unsigned long long s = 0, res = 0;
     std::string temp_bin = "";
     std::cin >> n;
     for (int i = 0; i < n; ++i) {
@@ -15,11 +15,14 @@ int main() {
         for (int j = 15; j >= 0; --j) {
             if (temp&(1<<j)) {
                 s += std::pow(10, j);
+                // if ((s / (int)(std::pow(10, j))) % 10 == 3) {
+                //     s -= 3 * std::pow(10, j);
+                // }
             }
         }
     }
     temp_bin = std::to_string(s);
-    //std::cout << temp_bin << std::endl;
+    std::cout << temp_bin << std::endl;
     int len = temp_bin.length() - 1;
     int i = 0;
     bool f = false;
@@ -39,7 +42,7 @@ int main() {
         res /= 2;
         cnt = 2;
     }
-    std::cout << res << std::endl;
+    //std::cout << res << std::endl;
     int dec_res = 0, base = 1;
     while (res) {
         int last_dig = res % 10;
