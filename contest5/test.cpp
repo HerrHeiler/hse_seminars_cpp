@@ -17,11 +17,17 @@ std::string delete_spaces(std::string _stroka) {
 }
 
 int main() {
-    std::string stroka;
-    std::getline(std::cin, stroka);
-    std::cout << stroka << std::endl;
+    //std::string stroka;
+    //std::getline(std::cin, stroka);
+    //std::cout << stroka << std::endl;
     //std::cout << stroka.length() << std::endl;
     //stroka.erase(4, 1);
-    std::cout << delete_spaces(stroka);
+    //std::cout << delete_spaces(stroka);
+    std::string _sus = "12345";
+    char pld = _sus[_sus.length() - 2] + 1;
+    int pp = pld - '0';
+    std::cout << pld << ' ' << pp << '\n';
+    int ld = _sus[_sus.length() - 1] - '0';
+    std::cout << ld;
     return 0;
 }

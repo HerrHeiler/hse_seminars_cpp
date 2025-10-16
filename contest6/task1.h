@@ -1,0 +1,1 @@
+template <typename It, typename Pred> bool AnyOf(It first, It last, Pred f);
