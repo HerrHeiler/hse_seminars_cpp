@@ -1,9 +1,11 @@
 #include <iostream>
+#include <fstream>
 
 int main() {
-    std::cout << "first seminar";
-    // for positive numbers:
-    // << n means to multiplicate by 2^n
-    // >> n means to divide by 2^n
+    std::ifstream fin("input.txt");
+    std::ofstream fout("output.txt");
+    std::fstream file("data.txt", std::ios::in | std::ios::out);
+    //std::ifstream fin;
+    //Fin.open("input.txt")
     return 0;
 }
