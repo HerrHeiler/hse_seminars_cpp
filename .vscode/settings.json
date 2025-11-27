@@ -47,6 +47,14 @@
         "variant": "cpp",
         "vector": "cpp",
         "algorithm": "cpp",
-        "cstddef": "cpp"
+        "cstddef": "cpp",
+        "__tree": "cpp",
+        "forward_list": "cpp",
+        "fstream": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "unordered_set": "cpp",
+        "iterator": "cpp"
     }
 }
