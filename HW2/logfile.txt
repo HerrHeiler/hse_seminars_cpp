@@ -1,0 +1,85 @@
+[2025-11-30 21:55:47] [INFO]: Logger level has been successfully set to [DEBUG]
+[2025-11-30 21:55:47] [INFO]: --// The compliance of the task 2 has started //--
+[2025-11-30 21:55:47] [DEBUG]: [std::string ctor] $id=1$ this=0x16b3d6e88 value=""
+[2025-11-30 21:55:47] [DEBUG]: [default ctor] $id=2$ this=0x16b3d6e88 value=""
+[2025-11-30 21:55:47] [DEBUG]: [std::string ctor] $id=3$ this=0x16b3d6e68 value="hello"
+[2025-11-30 21:55:47] [DEBUG]: [const char* ctor] $id=4$ this=0x16b3d6e68 value="hello"
+[2025-11-30 21:55:47] [DEBUG]: [std::string ctor] $id=5$ this=0x16b3d6e30 value="world"
+[2025-11-30 21:55:47] [DEBUG]: [copy ctor] $id=6$ this=0x16b3d6e10 from $id=5$ value="world"
+[2025-11-30 21:55:47] [INFO]: --// The compliance of the task 2 has ended //--
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=6$ this=0x16b3d6e10 value="world"
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=5$ this=0x16b3d6e30 value="world"
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=4$ this=0x16b3d6e68 value="hello"
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=2$ this=0x16b3d6e88 value=""
+[2025-11-30 21:55:47] [INFO]: --// The compliance of the task 3 has started //--
+[2025-11-30 21:55:47] [INFO]: >> start variant A - without init list
+[2025-11-30 21:55:47] [INFO]: [Wrapper::ctor] Start of the variant A
+[2025-11-30 21:55:47] [DEBUG]: [std::string ctor] $id=7$ this=0x16b3d6e60 value=""
+[2025-11-30 21:55:47] [DEBUG]: [default ctor] $id=8$ this=0x16b3d6e60 value=""
+[2025-11-30 21:55:47] [DEBUG]: [Wrapper::internal_default_ctor]
+[2025-11-30 21:55:47] [DEBUG]: [std::string ctor] $id=9$ this=0x16b3d6d28 value="variant A value"
+[2025-11-30 21:55:47] [DEBUG]: [move assign] $id=8$ this=0x16b3d6e60 (moved-from object ID reset)
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=0$ this=0x16b3d6d28 value="variant A value"
+[2025-11-30 21:55:47] [INFO]: [Wrapper::ctor] End of the variant A
+[2025-11-30 21:55:47] [INFO]: << end variant A - without init list
+[2025-11-30 21:55:47] [INFO]: >> start variant B - with init list
+[2025-11-30 21:55:47] [DEBUG]: [std::string ctor] $id=10$ this=0x16b3d6df8 value="variant B value"
+[2025-11-30 21:55:47] [INFO]: [Wrapper::ctor] End of the variant B
+[2025-11-30 21:55:47] [INFO]: << end variant B - with init list
+[2025-11-30 21:55:47] [INFO]: --// The compliance of the task 3 has ended //--
+[2025-11-30 21:55:47] [DEBUG]: [Wrapper::dtor]
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=10$ this=0x16b3d6df8 value="variant B value"
+[2025-11-30 21:55:47] [DEBUG]: [Wrapper::dtor]
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=8$ this=0x16b3d6e60 value="variant A value"
+[2025-11-30 21:55:47] [INFO]: --// The compliance of the task 4 has started //--
+[2025-11-30 21:55:47] [INFO]: >> default delegating constructor
+[2025-11-30 21:55:47] [DEBUG]: [std::string ctor] $id=11$ this=0x16b3d6e70 value=""
+[2025-11-30 21:55:47] [DEBUG]: [default ctor] $id=12$ this=0x16b3d6e70 value=""
+[2025-11-30 21:55:47] [INFO]: >> const char* delegating constructor
+[2025-11-30 21:55:47] [DEBUG]: [std::string ctor] $id=13$ this=0x16b3d6e38 value="test"
+[2025-11-30 21:55:47] [DEBUG]: [const char* ctor] $id=14$ this=0x16b3d6e38 value="test"
+[2025-11-30 21:55:47] [INFO]: --// The compliance of the task 4 has ended //--
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=14$ this=0x16b3d6e38 value="test"
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=12$ this=0x16b3d6e70 value=""
+[2025-11-30 21:55:47] [INFO]: --// The compliance of the task 5 has started //--
+[2025-11-30 21:55:47] [INFO]: >> push_back(temp)
+[2025-11-30 21:55:47] [DEBUG]: [std::string ctor] $id=15$ this=0x16b3d6e48 value="temp"
+[2025-11-30 21:55:47] [DEBUG]: [const char* ctor] $id=16$ this=0x16b3d6e48 value="temp"
+[2025-11-30 21:55:47] [DEBUG]: [move ctor] $id=16$ this=0x131605e80 from $id=0$ value="temp"
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=0$ this=0x16b3d6e48 value="temp"
+[2025-11-30 21:55:47] [INFO]: >> push_back(not temp)
+[2025-11-30 21:55:47] [DEBUG]: [std::string ctor] $id=17$ this=0x16b3d6e10 value="str"
+[2025-11-30 21:55:47] [DEBUG]: [const char* ctor] $id=18$ this=0x16b3d6e10 value="str"
+[2025-11-30 21:55:47] [DEBUG]: [copy ctor] $id=19$ this=0x131605fa0 from $id=18$ value="str"
+[2025-11-30 21:55:47] [DEBUG]: [move ctor] $id=16$ this=0x131605f80 from $id=0$ value="temp"
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=0$ this=0x131605e80 value="temp"
+[2025-11-30 21:55:47] [INFO]: >> emplace_back(...)
+[2025-11-30 21:55:47] [DEBUG]: [std::string ctor] $id=20$ this=0x1316068d0 value="emplaced"
+[2025-11-30 21:55:47] [DEBUG]: [const char* ctor] $id=21$ this=0x1316068d0 value="emplaced"
+[2025-11-30 21:55:47] [DEBUG]: [move ctor] $id=16$ this=0x131606890 from $id=0$ value="temp"
+[2025-11-30 21:55:47] [DEBUG]: [move ctor] $id=19$ this=0x1316068b0 from $id=0$ value="str"
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=0$ this=0x131605f80 value="temp"
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=0$ this=0x131605fa0 value="str"
+[2025-11-30 21:55:47] [INFO]: --// The compliance of the task 5 has ended //--
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=18$ this=0x16b3d6e10 value="str"
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=21$ this=0x1316068d0 value="emplaced"
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=19$ this=0x1316068b0 value="str"
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=16$ this=0x131606890 value="temp"
+[2025-11-30 21:55:47] [INFO]: --// The compliance of the task 6 has started //--
+[2025-11-30 21:55:47] [DEBUG]: [std::string ctor] $id=22$ this=0x16b3d6e78 value="hello"
+[2025-11-30 21:55:47] [DEBUG]: [const char* ctor] $id=23$ this=0x16b3d6e78 value="hello"
+[2025-11-30 21:55:47] [DEBUG]: [std::string ctor] $id=24$ this=0x16b3d6e58 value="world"
+[2025-11-30 21:55:47] [DEBUG]: [const char* ctor] $id=25$ this=0x16b3d6e58 value="world"
+[2025-11-30 21:55:47] [DEBUG]: [op<<] $id=23$ value="hello"
+[2025-11-30 21:55:47] [DEBUG]: [op<<] $id=25$ value="world"
+[2025-11-30 21:55:47] [DEBUG]: [op==] Compare $id=23$ and $id=25$
+[2025-11-30 21:55:47] [DEBUG]: [op!=] Compare $id=23$ and $id=25$
+[2025-11-30 21:55:47] [DEBUG]: [op==] Compare $id=23$ and $id=25$
+[2025-11-30 21:55:47] [DEBUG]: [op<] Compare $id=23$ and $id=25$
+[2025-11-30 21:55:47] [DEBUG]: [op+] Add $id=23$ and $id=25$
+[2025-11-30 21:55:47] [DEBUG]: [std::string ctor] $id=26$ this=0x16b3d6e38 value="helloworld"
+[2025-11-30 21:55:47] [DEBUG]: [op<<] $id=26$ value="helloworld"
+[2025-11-30 21:55:47] [INFO]: --// The compliance of the task 6 has ended //--
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=26$ this=0x16b3d6e38 value="helloworld"
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=25$ this=0x16b3d6e58 value="world"
+[2025-11-30 21:55:47] [DEBUG]: [dtor] $id=23$ this=0x16b3d6e78 value="hello"
