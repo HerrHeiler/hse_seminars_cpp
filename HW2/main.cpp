@@ -257,7 +257,7 @@ void task_3() {
     Logger::LOG("--// The compliance of the task 3 has ended //--", Logger::Level::INFO);
 }
 
-void task4() {
+void task_4() {
     Logger::LOG("--// The compliance of the task 4 has started //--", Logger::Level::INFO);
     
     Logger::LOG(">> default delegating constructor", Logger::Level::INFO);
@@ -319,7 +319,7 @@ int main() {
 
     task_3();
 
-    task4();
+    task_4();
 
     task_5();
 
