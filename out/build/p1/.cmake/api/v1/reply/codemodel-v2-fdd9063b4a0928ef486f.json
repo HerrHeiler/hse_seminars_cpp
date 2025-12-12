@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "p1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "p1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p1-Debug-a038fa0191d9c8272fc0.json",
+					"name" : "p1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p2-Debug-2e4110d7ad7013d92357.json",
+					"name" : "p2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "p3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-p3-Debug-171179c5ebd44fad1dd7.json",
+					"name" : "p3",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/miroslavamel/Desktop/Programms/hse cpp/hse_seminars_cpp/out/build/p1",
+		"source" : "/Users/miroslavamel/Desktop/Programms/hse cpp/hse_seminars_cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}
