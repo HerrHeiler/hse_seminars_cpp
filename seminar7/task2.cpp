@@ -1,36 +1,28 @@
+/*
+    Works with string library
+    Takes an integer as input and displays its digits in reverse order using pointers and loops
+*/
+
 #include <iostream>
-#include <thread>
-#include <cstdlib>
-#include <random>
+#include <string>
 
 int main() {
-    int n = 5, m = 5, delay;
-    int** matrix = new int* [n];
-    for (int i = 0; i < m; i++) matrix[n] = new int[m]();
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            matrix[n][m] = rand()%10;
-            std::cout << matrix[n][m] << ' ';
-            if (j == (m - 1)) std::cout << '\n';
-        }
+    std::string i;
+    std::cin >> i;
+    std::cout << "Original: " << i << ", Reversed: ";
+    if (i[0] == '-') {
+        std::cout << '-';
+        i.erase(0, 1);
     }
-    int s = 1;
-    while (s <= 10) {
-        for (int i = 0; i < n; ++i) {
-            for (int j = 0; j < m; ++j) {
-                if (j == (m - 1)) std::cout << "\x1b[A" << '\r' << matrix[n][m] << std::flush;
-                else std::cout << matrix[n][m] << ' ';
-                std::this_thread::sleep_for(std::chrono::milliseconds(100));
-                //if (j == (m - 1) && s == 1) std::cout << '\n';
-                //std::cout << '\r';
-            }
-        }
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                matrix[n][m] *= 2;
-            }
-        }
-        ++s;
+    for (int j = i.length() - 1; j >= 0; --j) {
+        std::cout << i[j];
     }
+    /*
+    the output depends on the input data, assume it's as following
+    ---input---
+    12345
+    --output---
+    Original: 12345, Reversed: 54321
+    */
     return 0;
 }

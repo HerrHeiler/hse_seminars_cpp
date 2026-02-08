@@ -1,20 +1,26 @@
+/*
+    Generates the first input terms of the Fibonacci sequence using pointers
+*/
+
 #include <iostream>
-#include <thread>
-#include <chrono>
 
 int main() {
-    std::cout << "Loading: ";
-    std::string syms = "-/\\|";
-    int c = 1;
-    while (c <= 10) {
-        for (int i = 0; i < syms.length(); i++) {
-            std::cout << syms[i] << std::flush;
-            //std::cout << syms[i];
-            std::this_thread::sleep_for(std::chrono::milliseconds(200));
-            std::cout  << '\r' << "Loading: " << std::flush;
-        }
-        ++c;
+    int n;
+    std::cin >> n;
+    int arr[n];
+    arr[0] = 0; arr[1] = 1; arr[2] = 1;
+    for (int i = 3; i < n; ++i) {
+        arr[i] = arr[i-1] + arr[i-2];
     }
-    std::cout << "Done!";
+    for (int j = 0; j < n; ++j) {
+        std::cout << arr[j] << ' ';
+    }
+    /*
+    the output depends on the input data, assume it's as following
+    ---input---
+    7
+    --output---
+    0 1 1 2 3 5 8 
+    */
     return 0;
 }

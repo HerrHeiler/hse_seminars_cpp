@@ -1,5 +1,0 @@
-/Users/miroslavamel/Desktop/Programms/hse cpp/hse_seminars_cpp/out/build/p1/CMakeFiles/p1.dir
-/Users/miroslavamel/Desktop/Programms/hse cpp/hse_seminars_cpp/out/build/p1/CMakeFiles/p2.dir
-/Users/miroslavamel/Desktop/Programms/hse cpp/hse_seminars_cpp/out/build/p1/CMakeFiles/p3.dir
-/Users/miroslavamel/Desktop/Programms/hse cpp/hse_seminars_cpp/out/build/p1/CMakeFiles/edit_cache.dir
-/Users/miroslavamel/Desktop/Programms/hse cpp/hse_seminars_cpp/out/build/p1/CMakeFiles/rebuild_cache.dir
